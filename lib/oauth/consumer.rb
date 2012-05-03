@@ -337,7 +337,7 @@ module OAuth
       case http_method
       when :post
         request = Net::HTTP::Post.new(path,headers)
-        request["Content-Length"] = '0' # Default to 0
+#        request["Content-Length"] = '0' # Default to 0
       when :put
         request = Net::HTTP::Put.new(path,headers)
         request["Content-Length"] = '0' # Default to 0
